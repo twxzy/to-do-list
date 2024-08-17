@@ -1,0 +1,90 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  width: 420px;
+  height: 700px;
+}
+
+.addList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addList > img{
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.title{
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+.add{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 15px;
+  font-size: 17px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 30px;
+}
+
+.nameList{
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 300;
+  color: #864CFF;
+}
+
+.nameList::placeholder{
+  opacity: 0.6;
+}
+
+/*LIST*/
+
+#list{
+  display: flex;
+  flex-direction:column-reverse;
+  align-items: center;
+}
+
+#inputsList{
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 15px;
+  font-size: 17px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+  font-weight: 300;
+  border: none;
+  background-color: palegoldenrod;
+  list-style-type: none;
+}
