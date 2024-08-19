@@ -1,6 +1,11 @@
 const add = document.querySelector('.add');
 let ul = document.getElementById('list');
+let namelist = document.getElementById('nameList')  
 
+/*ADD THEME FORM LIST*/
+namelist.addEventListener('input', function(){
+    localStorage.setItem('namelist', namelist.value)
+})
 
 /*EVENT THAT CALLS NEWADD() WHEN PRESSING "ENTER"*/
 let i = parseInt(localStorage.getItem('i')) || 0;
@@ -34,7 +39,6 @@ function newadd() {
 function test(a){
     localStorage.removeItem('item' + a)
     document.getElementById('inputsList').remove()
-    console.log(a)
 
     let ind = localStorage.getItem('i')
     ind -= 1
@@ -44,6 +48,8 @@ function test(a){
 /*LOAD ALL ITEMS FROM LOCALSTORAGE AND DISPLAY ALL LI*/
 document.addEventListener('DOMContentLoaded', function() {
     
+    namelist.value = localStorage.getItem('namelist')
+
     for (let j = 1; j < i; j++) {
         let savedItem = localStorage.getItem('item' + j);
             if (savedItem) {
