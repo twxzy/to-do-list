@@ -7,6 +7,11 @@ namelist.addEventListener('input', function(){
     localStorage.setItem('namelist', namelist.value)
 })
 
+
+function addClick(){
+    newadd();
+}
+
 /*EVENT THAT CALLS NEWADD() WHEN PRESSING "ENTER"*/
 let i = parseInt(localStorage.getItem('i')) || 0;
 
