@@ -76,15 +76,27 @@ body{
 
 #inputsList{
   width: 100%;
-  height: 35px;
+  border: 1px solid red;
   border-radius: 5px;
   border: 1px solid gray;
-  padding-left: 15px;
+  padding: 0px 15px 0px  15px;
   font-size: 17px;
   font-family: "Oswald", sans-serif;
   margin-bottom: 15px;
   font-weight: 300;
   border: none;
-  background-color: palegoldenrod;
+  background-color: #864CFF;
+  color: white;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#inputsList > div{
+  font-size: 15px;
+  padding: 7px 0px 7px 0px;
+}
+
+.trash{
+  cursor: pointer;
 }
